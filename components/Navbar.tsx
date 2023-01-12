@@ -5,7 +5,6 @@ import { API_KEY } from '../utils/reqs';
 
 
 export const items = [{
-    typ: "fetchTrending",
     title: "Trending",
     url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
 }, {

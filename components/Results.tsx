@@ -1,8 +1,15 @@
 import React from 'react'
+import Thumbnail from './Thumbnail'
 
-const Results = () => {
+const Results = ({requests}) => {
   return (
-    <div>Results</div>
+    <div>
+      {
+        requests.map((res: any) =>{
+          <Thumbnail key={res.id} result={res}/>
+        })
+      }
+    </div>
   )
 }
 
